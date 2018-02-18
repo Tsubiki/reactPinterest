@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+$bgColor_mainPost: #f3f3f3;
+$bgColor_hover: #e5e5e5;
+$fontColor_main: #555555;
+$font_main: 'Dosis', sans-serif;
+$font_mainSize: 17px;
+$borderRadius20: 20px;
+$borderRadius8: 8px;
+
+.singlePost {
+    width: 236px;
+    padding: 8px;
+    border-radius: $borderRadius8;
+    cursor: pointer;
+}
+.singlePost:hover {
+    background: $bgColor_mainPost;
+    transition: background-color 300ms;
+}
+.singlePost img {
+    width: 236px;
+    border-radius: $borderRadius8;
+    cursor: -moz-zoom-in; 
+    cursor: -webkit-zoom-in; 
+    cursor: zoom-in;
+}
+.postParagraph {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    box-sizing: border-box;
+    font-family: $font_main;
+    font-size: $font_mainSize;
+}
+.postParagraph p {
+    direction: ltr;
+    text-align: left;
+    overflow-wrap: break-word;
+    width: 180px;
+}
+.postParagraph a {
+    width: 30px;
+    height: 30px;
+}
+.postParagraph a:hover {
+    background: $bgColor_hover;
+    border-radius: $borderRadius20;
+}
+.postMenuIcon {
+    margin-top: 5px;
+}
